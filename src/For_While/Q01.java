@@ -25,23 +25,21 @@ public class Q01 {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Bir isim giriniz ");
 		String cumle = scan.nextLine();
-		System.out.println("karakter girmek icin ");
-		String karakter = scan.next();
-
-		char krk = karakter.charAt(0);
+		//System.out.println("karakter girmek icin ");
+		//char krk=scan.next().charAt(0);
 
 		int krkSayac = 0;
 
 		for (int i = 0; i < cumle.length() - 1; i++) {
 
-			if (cumle.charAt(i) == karakter.charAt(0)) {
+			if (cumle.charAt(i) == 'a') {
 				krkSayac++;
 
 			}
 
 		}
 
-		System.out.println("Number of " + krk + " = " + krkSayac);
+		System.out.println("Number of " + 'a' + " = " + krkSayac);
 		scan.close();
 
 	}
