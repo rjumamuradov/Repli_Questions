@@ -18,45 +18,35 @@ public class Q03 {
 		 * 
 		 * String str=“Javaisalsoeasy”
 		 * 
-		 * Output: a s
+		 * Output: [a, s]
 		 */
 
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Bir string giriniz : ");
 		String str = scan.nextLine();
-		List <String> tekrarBulma = new ArrayList<String>(); 
+		List<String> tekrarBulma = new ArrayList<String>();
 
 		int sayac = 0;
-		char crc='a';
-
+	
 		for (int i = 0; i < str.length() - 1; i++) {
-			sayac=0;
+			sayac = 0;
 
-			for (int j = i+1; j < str.length() - 1; j++) {
-				
+			for (int j = i + 1; j < str.length() - 1; j++) {
+
 				if (str.charAt(i) == str.charAt(j)) {
-					sayac++;					
+					sayac++;
 				}
 			}
-			crc=str.charAt(i);
-			//tekrarBulma.add(str.substring(i, i+1));
-			//System.out.print(tekrarBulma+" ");	
-			//System.out.println();
-			 
-			   
-				if (sayac > 1 && !tekrarBulma.contains(str.substring(i,i+1))) {
-					//System.out.println(tekrarBulma.contains("crc"));
-					tekrarBulma.add(str.substring(i,i+1));
-					//System.out.println(tekrarBulma.contains("crc"));
-										
-				}
-			  
-										
-				
-			
+
+			if (sayac > 1 && !tekrarBulma.contains(str.substring(i, i + 1))) {
+
+				tekrarBulma.add(str.substring(i, i + 1));
+
+			}
 
 		}
 		System.out.println(tekrarBulma);
+		scan.close();
 
 	}
 
