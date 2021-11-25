@@ -39,16 +39,24 @@ public class Q03 {
 				}
 			}
 			crc=str.charAt(i);
-			
-			if (sayac > 1 ) {
-				if (! tekrarBulma.contains("crc")) {
-					tekrarBulma.add(str.substring(i, i+1));
-					System.out.print(tekrarBulma+" ");					
-				}							
+			//tekrarBulma.add(str.substring(i, i+1));
+			//System.out.print(tekrarBulma+" ");	
+			//System.out.println();
+			 
+			   
+				if (sayac > 1 && !tekrarBulma.contains(str.substring(i,i+1))) {
+					//System.out.println(tekrarBulma.contains("crc"));
+					tekrarBulma.add(str.substring(i,i+1));
+					//System.out.println(tekrarBulma.contains("crc"));
+										
+				}
+			  
+										
 				
-			}
+			
 
 		}
+		System.out.println(tekrarBulma);
 
 	}
 

@@ -19,7 +19,7 @@ public class Q06 {
 		int input[] = {3,2,5,4,1,6};
 		
 		
-		//System.out.println(input[7]);
+		
 		minMax(input);
 		
 
@@ -38,9 +38,7 @@ public class Q06 {
 				min = input[i];	
 			}
 			
-			}
-			
-		
+			}		
 		
 		System.out.println("min : " + min + "\n\nmax : "+ max);
 		

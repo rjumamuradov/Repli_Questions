@@ -1,6 +1,5 @@
 package method_Array;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Q02 {
