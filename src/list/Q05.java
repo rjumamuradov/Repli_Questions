@@ -24,7 +24,7 @@ public class Q05 {
 		
 		tenNum(primeNumber,check);
 		System.out.println(primeNumber);
-		
+		scan.close();
 		
 		
 		
