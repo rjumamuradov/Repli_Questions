@@ -18,7 +18,7 @@ public class Q03 {
 		 * 
 		 * String str=“Javaisalsoeasy”
 		 * 
-		 * Output: [a, s]
+		 * Output: a, s
 		 */
 
 		Scanner scan = new Scanner(System.in);
@@ -45,7 +45,11 @@ public class Q03 {
 			}
 
 		}
-		System.out.println(tekrarBulma);
+		//System.out.println(tekrarBulma);
+		
+		for (int i = 0; i < tekrarBulma.size(); i++) {
+			System.out.print(tekrarBulma.get(i)+" ");
+		}
 		scan.close();
 
 	}

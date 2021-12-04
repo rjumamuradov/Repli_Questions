@@ -34,7 +34,7 @@ public class Q05 {
 	public static List<Integer> tenNum(List<Integer> primeNumber, int check) {
 		int sayac=0;
 		for (int i = check+1 ; i > 0; i++) {
-			int sayi=i;
+			
 			if (sayac == 10) {
 				break;				
 			}
